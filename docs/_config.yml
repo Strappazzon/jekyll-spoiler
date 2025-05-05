@@ -1,5 +1,5 @@
 # Website
-baseurl: "/jekyll-spoiler/demo"
+baseurl: "/jekyll-spoiler"
 
 # Custom directories
 layouts_dir: _templates
