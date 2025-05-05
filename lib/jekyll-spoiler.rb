@@ -1,4 +1,6 @@
+require 'jekyll'
 require 'kramdown'
+require 'liquid'
 
 module Jekyll
   module Spoiler
