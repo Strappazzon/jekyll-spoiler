@@ -1,4 +1,10 @@
 {
+	"[html][liquid]": {
+		"editor.defaultFormatter": null,
+		"editor.insertSpaces": false,
+		"editor.tabSize": 4,
+		"files.eol": "\n"
+	},
 	"[json][jsonc]": {
 		"editor.formatOnPaste": true,
 		"editor.formatOnSave": true,
@@ -34,6 +40,15 @@
 			70
 		]
 	},
+	"[scss]": {
+		"editor.defaultFormatter": null,
+		"editor.insertSpaces": true,
+		"editor.rulers": [
+			160
+		],
+		"editor.tabSize": 2,
+		"files.eol": "\n"
+	},
 	"[shellscript]": {
 		"editor.insertSpaces": true,
 		"editor.tabSize": 2,
@@ -50,8 +65,13 @@
 	"explorer.fileNesting.patterns": {
 		"*.gemspec": "Gemfile*"
 	},
+	"files.associations": {
+		"*.html": "liquid"
+	},
 	"files.exclude": {
-		"**/.ruby-lsp": true
+		"**/.jekyll-cache": true,
+		"**/.ruby-lsp": true,
+		"**/docs/_site*": true
 	},
 	"files.insertFinalNewline": true,
 	"files.readonlyInclude": {
@@ -64,8 +84,11 @@
 	"git.inputValidation": true,
 	"git.inputValidationLength": 70,
 	"git.inputValidationSubjectLength": 70,
+	"liquid.config.method": "workspace",
+	"liquid.engine": "jekyll",
 	"markdown.validate.enabled": false,
 	"rubyLsp.formatter": "rubocop",
+	"scss.validate": false,
 	"search.exclude": {
 		"**/.ruby-lsp": true,
 		"*.swp": true

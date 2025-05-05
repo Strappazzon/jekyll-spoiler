@@ -1,0 +1,43 @@
+[data-bs-theme='dark'] .spoiler-inline {
+  color: #aaa;
+  background-color: #aaa;
+}
+
+.spoiler-inline {
+  color: #000;
+  background-color: #000;
+  & > span {
+    visibility: hidden;
+  }
+  &:hover {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    & > span {
+      visibility: visible;
+    }
+  }
+}
+
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details#try_it
+
+details {
+  border: 1px solid #aaa;
+  border-radius: var(--bs-border-radius);
+  padding: 0.5em 0.5em 0;
+  margin-bottom: 1rem;
+  summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  &[open] {
+    padding: 0.5em;
+    summary {
+      border-bottom: 1px solid #aaa;
+      margin-bottom: 0.5em;
+    }
+  }
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}

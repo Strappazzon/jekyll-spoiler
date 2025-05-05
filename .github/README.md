@@ -31,22 +31,26 @@ Then execute `bundle install` to install the Gem.
 
 ## Getting Started
 
-Use this to add spoiler text:
+1. Use the Liquid filter and/or tag in your website
+    - Use this to add spoiler text:
 
-```liquid
-{{ "Lorem ipsum dolor sit amet." | spoiler }}
-```
+      ```liquid
+      {{ "Lorem ipsum dolor sit amet." | spoiler }}
+      ```
 
-Use this to add collapsible spoiler text
+    - Use this to add collapsible spoiler text:
 
-```liquid
-{% spoiler %}
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-{% endspoiler %}
+      ```liquid
+      {% spoiler %}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      {% endspoiler %}
 
-{% spoiler title="Spoilers Ahead!" %}
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-{% endspoiler %}
-```
+      {% spoiler title="Spoilers Ahead!" %}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+      {% endspoiler %}
+      ```
+
+2. Style the spoiler using CSS.  
+   An example can be found here: [`docs/_sass/_spoiler.scss`](../docs/_sass/_spoiler.scss).

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<meta name="description" content="{{ page.description }}">
+		<meta name="author" content="Alberto Strappazzon">
+		<meta name="robots" content="noindex,nofollow">
+		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#d6412a">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<link rel="stylesheet" href="{{ site.baseurl }}{{ '/index.css?' }}{{ site.time | date: '%s%N' }}">
+	</head>
+	<body>
+		<div class="col-lg-8 mx-auto p-4 py-md-5">
+			<h1>{{ page.title }}</h1>
+
+			{{ content }}
+
+			<a href="https://github.com/Strappazzon/jekyll-spoiler" class="btn btn-primary btn-md">View on GitHub</a>
+		</div>
+		{% comment %} https://kolappan.com/blog/2023/auto-theme-selection-with-bootstrap-5/ {% endcomment %}
+		<script>
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark');
+			}
+			if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'light');
+			}
+		</script>
+	</body>
+</html>

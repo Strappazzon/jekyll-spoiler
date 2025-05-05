@@ -1,0 +1,25 @@
+# Website
+baseurl: "/jekyll-spoiler/demo"
+
+# Custom directories
+layouts_dir: _templates
+
+# Excluded files, folders
+exclude:
+  - README.md
+
+# Markdown
+markdown: kramdown
+
+# Kramdown
+# See: https://kramdown.gettalong.org/options.html
+kramdown:
+  html_to_native: true
+  input: GFM
+  # Disable smart quotes
+  smart_quotes: "apos,apos,quot,quot"
+
+# CSS
+sass:
+  sourcemap: development
+  style: compressed
