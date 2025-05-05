@@ -1,11 +1,11 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'jekyll-spoiler/version'
+require 'jekyll-spoiler'
 
 Gem::Specification.new do |spec|
   spec.name          = 'jekyll-spoiler'
-  spec.version       = Jekyll::Spoiler::VERSION
+  spec.version       = '1.0.0'
   spec.authors       = ['Alberto Strappazzon']
   spec.summary       = 'Jekyll support for spoilers.'
   spec.description   = 'This plugin provides spoiler text support for Jekyll.'
