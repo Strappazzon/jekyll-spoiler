@@ -23,3 +23,7 @@ kramdown:
 sass:
   sourcemap: development
   style: compressed
+
+# Load jekyll-spoiler
+plugins:
+  - jekyll-spoiler

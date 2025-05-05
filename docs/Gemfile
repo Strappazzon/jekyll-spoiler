@@ -7,5 +7,5 @@ end
 source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.4'
-gem 'jekyll-spoiler', path: '../'
+gem 'jekyll-spoiler', '~> 1.0.1'
 gem 'mini_racer', '~> 0.18'

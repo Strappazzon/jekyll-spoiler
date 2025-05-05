@@ -1,11 +1,3 @@
-PATH
-  remote: ..
-  specs:
-    jekyll-spoiler (1.0.0)
-      jekyll (~> 4.4)
-      kramdown (~> 2.5)
-      liquid (~> 4.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,6 +66,10 @@ GEM
       webrick (~> 1.7)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
+    jekyll-spoiler (1.0.1)
+      jekyll (~> 4.4)
+      kramdown (~> 2.5)
+      liquid (~> 4.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.11.3)
@@ -165,7 +161,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 4.4)
-  jekyll-spoiler!
+  jekyll-spoiler (~> 1.0.1)
   mini_racer (~> 0.18)
 
 BUNDLED WITH
