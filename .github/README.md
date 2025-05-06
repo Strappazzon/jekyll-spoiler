@@ -21,7 +21,7 @@ Add one of these lines to your `Gemfile`:
 gem 'jekyll-spoiler'
 
 # use pessimistic lock
-gem 'jekyll-spoiler', ~> '1.0'
+gem 'jekyll-spoiler', '~> 1.0'
 
 # fetch gem from git
 gem 'jekyll-spoiler', git: 'https://github.com/Strappazzon/jekyll-spoiler.git', tag: '1.0.0'
