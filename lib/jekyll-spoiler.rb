@@ -43,13 +43,7 @@ module Jekyll
       def spoiler(input)
         return if input.empty?
 
-        # rubocop:disable Layout/ArrayAlignment
-        return %W[
-          <span class="spoiler-inline">
-            <span>#{input}</span>
-          </span>
-        ].join(' ')
-        # rubocop:enable Layout/ArrayAlignment
+        return "<span class=\"spoiler-inline\"><span>#{input}</span></span>"
       end
     end
   end
