@@ -1,0 +1,15 @@
+[data-bs-theme='dark'] {
+  --bs-body-bg: #02060a;
+}
+
+.btn-primary {
+  --bs-btn-bg: #d6412a;
+  --bs-btn-border-color: #d6412a;
+  --bs-btn-hover-bg: #c33a25;
+  --bs-btn-hover-border-color: #c1321c;
+  --bs-btn-focus-shadow-rgb: 252,67,48;
+  --bs-btn-active-bg: #c1321c;
+  --bs-btn-active-border-color: var(--bs-danger);
+  --bs-btn-disabled-bg: #d6412a;
+  --bs-btn-disabled-border-color: #d6412a;
+}
