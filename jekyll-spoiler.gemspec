@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'jekyll-spoiler'
-  spec.version       = '1.0.3'
+  spec.version       = '1.0.4'
   spec.authors       = ['Alberto Strappazzon']
   spec.summary       = 'Jekyll support for spoiler text.'
   spec.description   = 'This plugin provides spoiler text support for Jekyll with a Liquid filter and tag.'
@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   raise 'RubyGems 2.0 or newer is required.' unless spec.respond_to?(:metadata)
 
   spec.metadata['homepage_uri']    = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/Strappzzzon/jekyll-spoiler'
+  spec.metadata['source_code_uri'] = 'https://github.com/Strappazzon/jekyll-spoiler'
   spec.metadata['changelog_uri']   = 'https://github.com/Strappazzon/jekyll-spoiler/blob/master/CHANGELOG.md'
 
   spec.files                 = [*Dir['lib/**/*.rb'], 'LICENSE.txt']

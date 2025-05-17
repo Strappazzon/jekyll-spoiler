@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.4] - 2025-05-17
+
+- Fix typo in metadata
+
 ## [1.0.3] - 2025-05-11
 
 - Updated gem metadata
